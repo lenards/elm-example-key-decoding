@@ -2,3 +2,6 @@
 elm-stuff
 # elm-repl generated files
 repl-temp-*
+# npm
+node_modules/
+npm-debug.log

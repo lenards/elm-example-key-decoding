@@ -1,0 +1,4 @@
+{
+    "elm.formatCommand": ".\\node_modules\\.bin\\elm-format.cmd",
+    "elm.makeSpecialFile": "elm/src/Main.elm",
+}
