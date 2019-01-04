@@ -14,16 +14,16 @@ init _ =
     ( { keys = [] }, Cmd.none )
 
 
+{-| Define subscriptions for Browser element
 
-{- If you're looking for key inputs, like Modifier keys [0], you will
-   not see them if you're using `onKeyPress`, which the documentation has
-   a kind notes about [1]. That's why `onKeyDown` is used here.
+If you're looking for key inputs, like Modifier keys [0], you will
+not see them if you're using `onKeyPress`, which the documentation has
+a kind notes about [1]. That's why `onKeyDown` is used here.
 
-   [0] https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values#Modifier_keys
-   [1] https://package.elm-lang.org/packages/elm/browser/1.0.1/Browser-Events#onKeyPress
+    [0] https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values#Modifier_keys
+    [1] https://package.elm-lang.org/packages/elm/browser/1.0.1/Browser-Events#onKeyPress
+
 -}
-
-
 subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.batch
